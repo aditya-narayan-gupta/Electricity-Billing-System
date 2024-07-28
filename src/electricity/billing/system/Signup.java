@@ -1,3 +1,5 @@
+
+
 package electricity.billing.system;
 
 import javax.swing.*;
@@ -152,8 +154,8 @@ public class Signup extends JFrame implements ActionListener {
                     query = "insert into Signup value('" + smeter + "', '" + susername + "', '" + sname + "','" + spassword + "','" + sloginAs + "')";
                 }else {
                     query = "update Signup set username = '"+susername+"', password = '"+spassword+"', usertype = '"+sloginAs+"' where meter_no = '"+smeter+"'";
-                }
                  c.statement.executeUpdate(query);
+                }
 
                 JOptionPane.showMessageDialog(null,"Account Created");
                 setVisible(false);

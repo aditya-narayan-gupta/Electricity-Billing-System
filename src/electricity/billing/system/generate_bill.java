@@ -90,7 +90,7 @@ public class generate_bill extends JFrame implements ActionListener {
                 area.append("\n    Cost Per Unit        : "+resultSet.getString("cost_per_unit"));
                 area.append("\n   Meter Rent: "+resultSet.getString("meter_rent"));
                 area.append("\n   Service Charge   : "+resultSet.getString("service_charge"));
-                area.append("\n   Service Tax        : "+resultSet.getString("service_tax"));
+//                area.append("\n   Service Tax        : "+resultSet.getString("service_tax"));
                 area.append("\n   Swacch Bharat      : "+resultSet.getString("swacch_bharat"));
                 area.append("\n   Fixed Tax     : "+resultSet.getString("fixed_tax"));
 

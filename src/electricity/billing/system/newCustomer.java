@@ -1,5 +1,5 @@
 package electricity.billing.system;
-
+//
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -111,7 +111,7 @@ public class newCustomer extends JFrame implements ActionListener {
 
         setVisible(true);
     }
-
+//
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource()==next){
@@ -122,16 +122,16 @@ public class newCustomer extends JFrame implements ActionListener {
             String sstate = stateText.getText();
             String eemail = emailText.getText();
             String sphone = phoneText.getText();
-
-
+//
+//
             String query_customer = "insert into new_customer values('"+sname+"','"+smeter+"','"+saddress+"','"+scity+"','"+sstate+"','"+eemail+"','"+sphone+"')";
             String query_signup = "insert into Signup values('"+smeter+"','','"+sname+"','','')";
-
+//
             try{
                 database c = new database();
                 c.statement.executeUpdate(query_customer);
                 c.statement.executeUpdate(query_signup);
-
+//
                 JOptionPane.showMessageDialog(null,"Customer details added successfully");
                 setVisible(false);
                 new meterInfo(smeter);
@@ -142,7 +142,7 @@ public class newCustomer extends JFrame implements ActionListener {
             setVisible(false);
         }
     }
-
+//
     public static void main(String[] args) {
          new newCustomer();
     }

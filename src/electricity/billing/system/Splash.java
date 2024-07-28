@@ -5,10 +5,11 @@ import java.awt.*;
 
 public class Splash extends JFrame {
     Splash(){
+    	
 
         ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource("icon/splash/Splash.jpg"));
         Image imageOne = imageIcon.getImage().getScaledInstance(600,400,Image.SCALE_DEFAULT);
-        ImageIcon imageIcon2 = new ImageIcon( imageOne);
+     ImageIcon imageIcon2 = new ImageIcon( imageOne);
         JLabel imageLabel = new JLabel(imageIcon2);
         add(imageLabel);
 

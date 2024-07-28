@@ -18,7 +18,7 @@ public class deposit_details extends JFrame implements ActionListener {
         setSize(700,500);
         setLocation(400,200);
         setLayout(null);
-
+//
         JLabel searchMeter = new JLabel("Search By Meter Number");
         searchMeter.setBounds(20,20,150,20);
         add(searchMeter);
@@ -36,11 +36,11 @@ public class deposit_details extends JFrame implements ActionListener {
         }catch (Exception e){
             e.printStackTrace();
         }
-
-        JLabel searchMonth = new JLabel("Search By Name");
+//
+        JLabel searchMonth = new JLabel("Search By Month");
         searchMonth.setBounds(400,20,100,20);
         add(searchMonth);
-
+//
         searchMonthCho = new Choice();
         searchMonthCho.add("January");
         searchMonthCho.add("February");
@@ -67,7 +67,7 @@ public class deposit_details extends JFrame implements ActionListener {
         }catch (Exception e){
             e.printStackTrace();
         }
-
+//
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setBounds(0,100,700,500);
         scrollPane.setBackground(Color.white);
@@ -94,7 +94,7 @@ public class deposit_details extends JFrame implements ActionListener {
 
         setVisible(true);
     }
-
+//
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource()==search){

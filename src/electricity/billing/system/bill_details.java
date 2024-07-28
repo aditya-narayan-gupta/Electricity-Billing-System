@@ -29,7 +29,7 @@ public class bill_details extends JFrame {
         sp.setBounds(0,0,700,650);
         add(sp);
 
-        setVisible(true);
+   setVisible(true);
     }
     public static void main(String[] args) {
         new bill_details("");

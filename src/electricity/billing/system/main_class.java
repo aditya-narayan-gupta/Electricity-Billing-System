@@ -200,7 +200,9 @@ public class main_class extends JFrame implements ActionListener {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
+    	
         new main_class("","");
     }
 }

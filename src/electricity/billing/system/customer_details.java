@@ -65,7 +65,7 @@ public class customer_details extends JFrame implements ActionListener {
         }catch (Exception e){
             e.printStackTrace();
         }
-
+//
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setBounds(0,100,700,500);
         scrollPane.setBackground(Color.white);
@@ -116,7 +116,7 @@ public class customer_details extends JFrame implements ActionListener {
             setVisible(false);
         }
     }
-
+//
     public static void main(String[] args) {
         new customer_details();
     }
